@@ -1,3 +1,4 @@
-build: zmk-keyboard-test-macro
+name: zmk-keyboard-test-macro
+build:
   settings:
     board_root: .
