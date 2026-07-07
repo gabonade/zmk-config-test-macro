@@ -1,6 +1,6 @@
 if SHIELD_TEST-MACRO
 
-config ZMK_TEST-MACRO
+config ZMK_KEYBOARD_NAME
     default "ZMK test macro"
 
 endif
