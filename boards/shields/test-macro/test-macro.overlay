@@ -3,12 +3,13 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,matrix-transform = &default_transform;
+        //zmk,physical-layout = &physical_layout0;
     };
 
-    kscan0: kscan0{
+    kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "row2col";
+        diode-direction = "col2row";
         wakeup-source;
         
         col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>,
@@ -29,11 +30,13 @@
             RC(1,0) RC(1,1)
         >;
     };
-
+/*
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default layout";
         kscan = <&kscan0>;
         transform = <&default_transform>;
     };
+*/
+
 };
