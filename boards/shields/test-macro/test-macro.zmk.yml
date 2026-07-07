@@ -1,0 +1,9 @@
+file_format: "1"
+id: test-macro
+name: test-macro
+type: shield
+url: none
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys

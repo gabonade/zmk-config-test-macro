@@ -1,6 +1,6 @@
 if SHIELD_TEST-MACRO
 
 config ZMK_TEST-MACRO
-    default "my keyboard"
+    default "ZMK test macro"
 
 endif
