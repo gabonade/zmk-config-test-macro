@@ -3,4 +3,10 @@ if SHIELD_TEST-MACRO
 config ZMK_KEYBOARD_NAME
     default "ZMK test macro"
 
+config ZMK_BLE
+    def_bool n
+
+config SETTINGS
+    def_bool n
+
 endif
